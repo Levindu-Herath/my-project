@@ -19,6 +19,11 @@ jobs:
     permissions:
       contents: read
 
+    # The project lives in the my-project-master/ subfolder of the repo, so run all commands from there
+    defaults:
+      run:
+        working-directory: my-project-master
+
     steps:
     - uses: actions/checkout@v4
 
